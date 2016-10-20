@@ -1,13 +1,13 @@
- # Refactored Sniffle
+# Refactored Sniffle
 
- Extract rails logs from ElasticSearch and find slow requests.
+Extract rails logs from ElasticSearch and find slow requests.
 
 ## Requirements
 
 * Python
 * virtualenv
 
- ## Usage
+## Usage
 
 ### All in one
 
