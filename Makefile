@@ -1,4 +1,4 @@
-.PHONY: all venv deps run clean
+.PHONY: all venv deps run clean lint
 
 all: clean venv deps run
 
@@ -9,9 +9,10 @@ venv:
 	virtualenv venv
 
 deps:
-	source venv/bin/activate && \
-		pip install -r requirements.txt
+	venv/bin/pip install -r requirements.txt
 
 run:
-	source venv/bin/activate && \
-		python ./top.py
+	venv/bin/python ./top.py
+
+lint:
+	venv/bin/flake8 ./top.py
